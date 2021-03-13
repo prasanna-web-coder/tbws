@@ -57,3 +57,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # User management gem
 gem 'devise'
+gem 'sassc', '~> 2.1.0'
+gem 'unicorn'
