@@ -1,0 +1,140 @@
+ $('.owl-carousel-banner').owlCarousel({
+         loop:true,
+         margin:10,
+         dots:true,
+         nav:true,
+         mouseDrag:false,
+         autoplay:true,
+         smartSpeed:15000,
+         animateOut: 'fadeOut',
+         responsive:{
+             0:{
+                 items:1
+             },
+             600:{
+                 items:1
+             },
+             1000:{
+                 items:1
+             }
+         }
+         });
+
+         $('.owl-carousel-news').owlCarousel({
+         loop:true,
+         margin:25,
+         dots:false,
+         nav:true,
+         mouseDrag:true,
+         autoplay:true,
+		 navText: ['<span class="ti-angle-left"></span>', '<span class="ti-angle-right"></span>'],
+         responsive:{
+             0:{
+                 items:1
+             },
+             600:{
+                 items:1
+             },
+			 768:{
+                 items:2
+             },
+             1000:{
+                 items:3
+             }
+         }
+         });
+		 
+		 $('.owl-carousel-article').owlCarousel({
+         loop:true,
+         margin:25,
+         dots:false,
+         nav:true,
+         mouseDrag:true,
+         autoplay:true,
+		 navText: ['<span class="ti-angle-left"></span>', '<span class="ti-angle-right"></span>'],
+         responsive:{
+             0:{
+                 items:1
+             },
+             600:{
+                 items:1
+             },
+			 768:{
+                 items:2
+             },
+             1000:{
+                 items:3
+             }
+         }
+         });
+		 
+		 
+		 $('.owl-carousel-popular').owlCarousel({
+         loop:true,
+         margin:25,
+         dots:false,
+         nav:true,
+         mouseDrag:true,
+         autoplay:false,
+		 navText: ['<span class="ti-angle-left"></span>', '<span class="ti-angle-right"></span>'],
+         responsive:{
+             0:{
+                 items:1
+             },
+             600:{
+                 items:1
+             },
+			 768:{
+                 items:2
+             },
+			 
+             1000:{
+                 items:2
+             }
+         }
+         });
+		 
+		 $('.owl-carousel-rpost').owlCarousel({
+         loop:true,
+         margin:25,
+         dots:false,
+         nav:true,
+         mouseDrag:true,
+         autoplay:false,
+		 navText: ['<span class="ti-angle-left"></span>', '<span class="ti-angle-right"></span>'],
+         responsive:{
+             0:{
+                 items:1
+             },
+             600:{
+                 items:1
+             },
+			 768:{
+                 items:2
+             },
+             1000:{
+                 items:3
+             }
+         }
+         });
+		 
+		 $('.owl-carousel-product').owlCarousel({
+         loop:false,
+         margin:25,
+         dots:false,
+         nav:true,
+         mouseDrag:false,
+         autoplay:false,
+		 navText: ['<span class="ti-angle-left"></span>', '<span class="ti-angle-right"></span>'],
+         responsive:{
+             0:{
+                 items:1
+             },
+             600:{
+                 items:2
+             },
+             1000:{
+                 items:2
+             }
+         }
+         });

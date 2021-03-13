@@ -1,0 +1,343 @@
+
+@media (min-width:1000px) and (max-width:1199px) {
+	.wsmenu-list li {
+    margin-right:19px !important;
+}
+.servicescontent h4, .servicesfrom h4 {
+    font-size: 20px !important;
+}
+.servicescontent p {
+    font-size: 13px !important; 
+}
+}
+
+@media (min-width:768px) and (max-width:999px) {
+	.sec-padding {
+    padding: 30px 0px !important;
+}
+	.bannercontent h1 {
+    font-size: 33px !important;
+}
+.bannercontent h5 span {
+    font-size: 16px !important;
+}
+	.signinup a {
+    font-size: 14px !important;
+	margin-right: 44px !important;
+}
+	.ulbrands li {
+    width: 20% !important;
+}
+	
+.hoverpro::before {
+    top: 21px !important;
+}
+.hoverpro::after {
+
+    top: 4px !important;
+    height: 161% !important;
+
+}
+	
+	.servicescontent p {
+    font-size: 14px !important;
+    display: none !important;
+}
+.row.no-gutters.flex-row-reverse {
+    -ms-flex-direction: none !important;
+    flex-direction: none !important;
+}
+}
+
+@media (min-width:315px) and (max-width:999px) {
+	.mrginleft .headersection {
+    z-index: auto !important;
+
+}
+	.wsmenu-list li {
+    margin-right: 0px !important;
+ 
+}
+	.tabs-l li {
+    margin-bottom: 10px !important;
+    border-bottom: 1px solid #999 !important;
+    padding-bottom: 5px !important;
+}
+	.right-menu{
+		display:none !important;
+	}
+	.tabs-l li:last-child {
+    margin-bottom: 0px !important;
+    border: 0px !important;
+}
+.tabs-l li a{
+	padding-right:0px !important;
+}
+	.tabs-l li a.active {
+    color:#4d4b4b !important;
+}
+.tabs-l li a {
+    text-transform: capitalize !important;
+}
+.tabs-l li a::after {
+	display:none !important;
+}
+
+	.left-menu {
+    padding: 10px !important;
+    width: 100% !important;
+}
+.left-menu::after {
+	display:none !important;
+}
+	.footer-social a{
+			border:1px solid #fff !important;
+	}
+	.footer-social a i {
+    color: #fff !important;
+}
+	.brandscon p {
+    width: 100% !important;
+
+}
+	header .item .cover {
+    height:auto !important;
+    bottom: 0 !important;
+	top:auto !important;
+    left: 0 !important;
+	padding:0px 0px 25px !important;
+}
+header .item .cover .header-content {
+    text-align: center !important;
+}
+header .item .cover .header-content h2 {
+    font-size: 17px !important;
+}
+header .item .cover .header-content h1 {
+    font-size: 28px !important;
+}
+header .item .cover .header-content h4 {
+    font-size: 29px !important;
+}
+	.bg-form {
+    padding: 50px 0px !important;
+}
+	header .item .cover .header-content {
+    padding: 20px 35px 0px !important;
+
+}
+	.foote .itainfo {
+    margin-bottom: 35px !important;
+}
+.foote .itainfo:last-child {
+    margin-bottom: 0px !important;
+}
+	.bottomcont .text-center {
+    text-align: left !important;
+    margin-bottom: 22px;
+}
+.bottomcont .text-center:last-child {
+    margin-bottom: 0px !important;
+}
+	.servicescontent h4, .servicesfrom h4{
+    font-size: 20px !important;
+}
+.top-info {
+}
+.bris {
+    border:0px !important;
+	margin-bottom:20px !important
+}
+.bles {
+    border:0px !important;
+	margin-bottom:20px !important
+}
+.products-section {
+    border-bottom: 0px !important;
+}
+
+}
+@media (min-width:315px) and (max-width:767px) {
+	.rephoto {
+    width: 85px !important;
+}
+.recontent {
+    padding-left: 20px !important;
+}
+	.vidoeinfo {
+    position: relative  !important;
+    padding: 20px 0px 0px  !important;
+}
+	.page_breadcrumbs{
+		margin-bottom:35px !important;
+	}
+	.artic-infoma2 {
+    padding: 10px 0px !important;
+    border-radius: 0px 0px 15px 15px;
+}
+.divartcipos .article-date{
+	padding: 10px 0px 0px !important;
+}
+	.divartcipos {
+    position: relative !important;
+    left: auto !important;
+    bottom: auto !important;
+}
+	.innerheader.bgtriangle {
+    width: 100%;
+    padding: 15px 0px 0px !important;
+}
+	.askque {
+    font-size: 30px;
+    margin-top: 35px;
+    margin-bottom: 20px !important;
+}
+	.walletinfo h3 span{
+		display:inline-block !important
+	}
+	.col-md-7.walletinfo {
+    margin-top: 25px;
+}
+	.learnmo{
+		margin-bottom:25px;
+	}
+	
+	.sec-padding {
+    padding: 20px 0px !important;
+}
+	.owl-carousel-article .owl-nav button, .owl-carousel-popular .owl-nav button, .owl-carousel-rpost .owl-nav button {
+    height: 25px !important;
+    width: 25px !important;
+    border-radius: 3px !important;
+	font-size:16px !important;
+	line-height:25px !important;
+}
+	.section-title h3 {
+    color: #e8c38f !important;
+    font-size: 25px !important;
+}
+	.logo img {
+    width: 140px;
+}
+	.bannerform button {
+    position: absolute !important;
+    right: 0 !important; 
+    top: 0 !important;
+    width: 126px !important;
+}
+.bannerform.mt-4 {
+    position: relative;
+}
+	.signinup {
+    float: right;
+    color: #fff;
+    display: none;
+}
+	.mainbanner .owl-dots{
+		display:none !important
+	}
+	.bannercontent{
+		width:100% !important;
+	}
+	.bannerform input{
+		width:100% !important;
+	}
+	.bannerform input{
+		margin-bottom:25px;
+	}
+	
+	.bannercontent h1 {
+    font-size:29px !important;
+}
+.bannercontent h5 span {
+    font-size: 16px !important;
+}
+	.signinup a {
+    font-size: 14px !important;
+	margin-right: 44px !important;
+}
+	
+	
+	.ulbrands li {
+    width: 48% !important;
+}
+	.aboutmobile {
+		display:block !important;
+	}
+	.aboutsectionmainsec{
+		display:none !important;
+	}
+	.services-mobile{
+		display:block !important;
+	}
+	.brandscon .owl-prev {
+    width: 25px !important;
+    height: 25px !important;
+	left: -10px !important;
+}
+.brandscon .owl-next {
+    width: 25px !important;
+    height: 25px !important;
+	right: -10px !important;
+}
+.brandscon .owl-prev span {
+    font-size: 12px !important;
+	left: 6px !important;
+top: 6px !important;
+}
+.brandscon .owl-next span {
+    font-size: 12px !important;
+	right: 6px !important;
+top: 7px !important;
+}
+.owl-carousel.owl-theme.owl-carousel-brands {
+    padding: 0px 20px !important;
+}
+	.services-section{
+		display:none !important;
+	}
+	.mb-mo{
+		margin-bottom:20px !important;
+	}
+.servicesfrom {
+    color: #fff;
+    padding: 25px 25px !important;
+}
+	.hoverpro {
+    position: relative !important;
+    background: #000;
+    margin-left: 0px !important;
+    width: 100% !important;
+    margin: 0px !important;
+    height: auto !important;
+}
+.hoverpro div {
+    text-align: center !important;
+    width: 100% !important;
+    padding: 35px 0px !important;
+}
+.btop {
+    border-top: 0px !important;
+}
+	.hoverpro::before {
+		display:none !important;
+	}
+	.hoverpro::after {
+		display:none !important;
+	}
+}
+
+@media only screen 
+  and (min-device-width: 315px) 
+  and (max-device-width: 768px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+	  .homesection{
+	  min-height:500px !important;
+	  }
+	  header .item {
+    height: 500px !important;
+}
+  }
+
+

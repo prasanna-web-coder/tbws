@@ -12,4 +12,21 @@
  *
  *= require_tree .
  *= require_self
+ *= require theme/animate.min
+ *= require theme/aos
+ *= require theme/baguetteBox.min
+ *= require theme/banner
+ *= require theme/bootstrap.min
+ *= require theme/gallery
+ *= require theme/ie-alert
+ *= require theme/imagehover.min
+ *= require theme/jquery.fancybox.min
+ *= require theme/ma5-menu.min
+ *= require theme/owl.carousel.min
+ *= require theme/owl.theme.default.min
+ *= require theme/responsive
+ *= require theme/site
+ *= require theme/style
+ *= require theme/themify-icons
+ *= require theme/webslidemenu
  */

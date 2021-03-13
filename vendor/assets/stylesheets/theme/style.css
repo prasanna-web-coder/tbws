@@ -1,0 +1,1486 @@
+@import"webslidemenu.css";
+@import"owl.carousel.min.css";
+@import"owl.theme.default.min.css";
+@import"../font-awesome/css/font-awesome.min.css";
+@import"responsive.css";
+@import"themify-icons.css";
+@import"jquery.fancybox.min.css";
+@import"animate.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800&display=swap');
+
+
+
+
+:root {
+	--main-white-color: white;
+	--main-black-color: black;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.static {
+	position: static;
+}
+
+.cover {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.homesection {
+    position: relative;
+    min-height: 100vh;
+    background: #000;
+}
+.logobg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    display: none;
+}
+.headersection {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    z-index: 2505;
+    width: 100%;
+}
+.headerinner {
+    position: relative;
+    width: 100%;
+}
+.headersectionin {
+    width: 100%;
+    padding: 15px 0px 20px;
+}
+.left-contact li {
+    float: left;
+    margin-right: 25px;
+}
+.left-contact a {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 14px;
+    display: block;
+    margin: 8px 0px;
+    padding: 0px 0px 0px 25px;
+    position: relative;
+}
+.left-contact a img {
+    position: absolute;
+    left: 0;
+    top: 0px;
+}
+.right-contact {
+    float: right;
+    color: #fff;
+}
+.right-contact li {
+    float: left;
+    color: #fff;
+}
+.right-contact a{
+    color:#fff;
+    display: block;
+    font-size: 25px;
+    padding:0px 7px;
+}
+.right-contact a i {
+    font-size: 19px;
+}
+.top-info {
+    float: left;
+    width: 100%;
+    margin-top: 9px;
+    padding-bottom: 5px;
+    position: relative;
+}
+.borderstrip {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,aa8b41+100 */
+background: #000000; /* Old browsers */
+background: -moz-linear-gradient(left,  #000000 0%, #aa8b41 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #000000 0%,#aa8b41 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #000000 0%,#aa8b41 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#aa8b41',GradientType=1 ); /* IE6-9 */
+
+}
+.top-info {
+    float: left;
+    width: 100%;
+    margin-top: 17px;
+}
+header .item {
+    height: 100vh;
+    position: relative;
+  }
+  header .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  header .item .cover {
+    padding: 75px 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+  }
+  header .item .cover .header-content {
+    position: relative;
+    padding: 20px 0px 0px;
+    text-align: right;
+}
+  header .item .cover .header-content .line {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    border: 9px solid #fff;
+    -webkit-clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+    clip-path: polygon(0 0, 60% 0, 36% 100%, 0 100%);
+  }
+  header .item .cover .header-content h2 {
+    font-weight: 300;
+    font-size: 45px;
+    color: #fff;
+    text-transform: uppercase;
+}
+header .item .cover .header-content h1 {
+    font-size: 43px;
+    font-weight: 600;
+    margin: 10px 0;
+    word-spacing: 3px;
+    color: #fff;
+	text-shadow:1px 5px 5px rgba(0,0,0,0.8);
+}
+  header .item .cover .header-content h4 {
+    font-size: 43px;
+    font-weight: 600;
+    line-height: 36px;
+    color: #fff;
+	text-shadow:1px 5px 5px rgba(0,0,0,0.8);
+  }
+  header .owl-item.active h1 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: fadeInDown;
+    animation-delay: 0.3s;
+  }
+  header .owl-item.active h2 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: fadeInDown;
+    animation-delay: 0.3s;
+  }
+  header .owl-item.active h4 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: fadeInUp;
+    animation-delay: 0.3s;
+  }
+  header .owl-item.active .line {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: fadeInLeft;
+    animation-delay: 0.3s;
+  }
+  header .owl-nav, header .owl-prev {
+    position: absolute;
+    left: 15px;
+    top: 43%;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    background: rgba(0, 0, 0, 0.5) !important;
+    width: 40px;
+    cursor: pointer;
+    height: 40px;
+    position: absolute;
+    display: block;
+    z-index: 1000;
+    border-radius: 0;
+    display: :none !important;
+  }
+  header .owl-dots {
+    position: absolute;
+    right: 15px;
+    top: 45%;
+    z-index: 5;
+    width: 30px;
+}
+header .owl-dot button {
+    border: 1px solid #7d7d7b;
+    width: 100%;
+    height: 30px;
+    line-height: 28px;
+    margin: 0px 0px 10px;
+    background: #7d7d7b;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 13px;
+}
+header .owl-dot.active button {
+    border: 1px solid #aa8b41;
+    background: #aa8b41;
+
+}
+header .owl-dot {
+    width: 100%;
+    background: none;
+    border: 0px;
+}
+  header .owl-nav, header .owl-prev span {
+    font-size: 1.6875rem;
+    color: #fff;
+  }
+  header .owl-nav .owl-prev:focus {
+    outline: 0;
+  }
+header .owl-theme .owl-dots .owl-dot span {
+    margin: 0px;
+    background: none !important;
+    border: 3px ​solid #fff;
+    border-radius: 0px;
+    width: 6px;
+    height: 7px;
+    border: 6px solid #fff;
+	display: inline-block;
+}
+header .owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    width: 100%;
+}
+
+header .owl-theme .owl-dots .owl-dot.active span {
+    width: 15px;
+    height: 15px;
+    border:3px solid #dfb264;
+    display: inline-block;
+}
+  header .owl-nav .owl-prev:hover {
+    background: #000 !important;
+  }
+  header .owl-nav .owl-next {
+    position: absolute;
+    right: 15px;
+    top: 43%;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    background: rgba(0, 0, 0, 0.5) !important;
+    width: 40px;
+    cursor: pointer;
+    height: 40px;
+    position: absolute;
+    display: block;
+    z-index: 1000;
+    border-radius: 0;
+  }
+  header .owl-nav .owl-next span {
+    font-size: 1.6875rem;
+    color: #fff;
+  }
+  header .owl-nav .owl-next:focus {
+    outline: 0;
+  }
+  header .owl-nav .owl-next:hover {
+    background: #000 !important;
+  }
+  header:hover .owl-prev {
+    left: 0px;
+    opacity: 1;
+  }
+  header:hover .owl-next {
+    right: 0px;
+    opacity: 1;
+  }
+  
+  .signinup {
+    float: right;
+    color: #fff;
+}
+.signinup img{
+	margin-right:10px;
+}
+.lastchild{
+	margin-right:0px !important;
+}
+.signinup a {
+    border: 1px solid #dfb264;
+    color: #dfb264;
+    display: inline-block;
+    padding: 9px 24px;
+    border-radius: 40px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.signinup a i{
+	margin-right:5px;
+	font-size:18px;
+}
+.signinup a:hover{
+	background:#dfb264;
+	color: #000;
+}
+
+
+.bannercontent {
+    position: absolute;
+    z-index: 2500;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 1200px;
+    margin: 0 auto;
+    right: 0;
+    padding-top: 25px;
+}
+.bannercontent h1 {
+    font-weight: 300;
+    color: #fff;
+    font-size: 53px;
+    text-transform: uppercase;
+}
+.bannercontent h4 {
+    color: #fff;
+    font-size: 18px;
+    margin-top: 11px;
+}
+.bannerform input {
+    background: none !important;
+    border: 1px solid #fff;
+    padding: 7px 15px 9px;
+    font-size: 14px;
+    min-height: 48px;
+    margin-right: 4px;
+    border-radius: 5px;
+    width: 339px;
+	color:#fff;
+	outline:none;
+}
+.bannerform button{
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#efd196+0,c09855+100 */
+background: #efd196; /* Old browsers */
+background: -moz-linear-gradient(left,  #efd196 0%, #c09855 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #efd196 0%,#c09855 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #efd196 0%,#c09855 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efd196', endColorstr='#c09855',GradientType=1 ); /* IE6-9 */
+padding: 12px 20px;
+border-radius: 5px;
+border:0px;
+font-weight: 600;
+}
+.bannerform input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1; /* Firefox */
+}
+
+.bannerform input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #fff;
+}
+
+.bannerform input::-ms-input-placeholder { /* Microsoft Edge */
+ color: #fff;
+}
+.exploresec{
+	background:#000;	
+}
+.sec-padding{
+	padding:45px 0px;
+}
+.sec-padding-top{
+	padding-top:45px;
+}
+.sec-padding-top{
+	padding-top;45px;
+}
+.bgtriangle {
+    background:url(../images/triangle.jpg) repeat #000;
+        background-size: auto;
+    background-size: cover;
+}
+.fontwhite{
+	color:#fff;
+}
+.explfont {
+    font-weight: 800;
+    color: #e8c38f;
+    font-size: 19px;
+}
+.exploreh h2{
+	font-size:22px;
+}
+.tadetable tr th{
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cea969+0,e7c78c+100 */
+background: #cea969; /* Old browsers */
+background: -moz-linear-gradient(top,  #cea969 0%, #e7c78c 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #cea969 0%,#e7c78c 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #cea969 0%,#e7c78c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cea969', endColorstr='#e7c78c',GradientType=0 ); /* IE6-9 */
+border:0px;
+padding: 15px;
+}
+.tadetable tr td {
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    font-weight: 600;
+    color: #fff;
+    vertical-align: middle;
+    border-top: 0px;
+    padding: 10px 15px;
+}
+.tadetable{
+	border: 1px solid rgba(255,255,255,0.2);
+}
+.tadetable tr td img {
+    margin-right: 10px;
+    width: 50px;
+}
+.tadetable tr th:first-child{
+	border-radius:5px 0px 0px 0px ;
+}
+.tadetable tr th:last-child{
+	border-radius:0px 5px 0px 0px ;
+}
+.tadetable tr td button {
+    margin-right: 10px;
+    border: 0px;
+    padding:5px 25px;
+    border-radius: 5px;
+	border:1px solid transparent;
+}
+.tadetable tr td button:hover{
+	background:#000;
+	color:#dfb264;
+	border:1px solid #dfb264;
+}
+.bg-grey{
+	background: #efd196; /* Old browsers */
+background: -moz-linear-gradient(left,  #efd196 0%, #c09855 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #efd196 0%,#c09855 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #efd196 0%,#c09855 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efd196', endColorstr='#c09855',GradientType=1 ); /* IE6-9 */
+}
+.bg-dark{
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a17240+0,0b0a0a+100 */
+background: #a17240; /* Old browsers */
+background: -moz-linear-gradient(left,  #a17240 0%, #0b0a0a 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #a17240 0%,#0b0a0a 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #a17240 0%,#0b0a0a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a17240', endColorstr='#0b0a0a',GradientType=1 ); /* IE6-9 */
+
+}
+.blockbg{
+	background:#000;
+}
+.section-title h3{
+	color:#e8c38f;
+	font-size:27px;
+}
+.news-date {
+	position:relative;
+	padding:15px;
+}
+.news-date h4 {
+    padding-right: 83px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 18px;
+}
+.news-date span {
+    position: absolute;
+    right: 15px;
+    top: 18px;
+    font-size: 13px;
+}
+.news-info {
+    padding: 20px;
+    background: #131313;
+    border-radius: 0px 0px 15px 15px;
+    float: left;
+    width: 100%;
+}
+.news-info p {
+    color: #c1c1c1;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+
+.news-info span a {
+    color: #e6a049;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+.news-info span a:hover{
+    color: #fff;
+}
+.news-img img{
+	border-radius:15px 15px 0px 0px;
+}
+.owl-carousel-news .owl-nav{
+	position: absolute;
+right: 0;
+top: -51px;
+}
+.owl-carousel-news .owl-nav button {
+    border: 1px solid #636363;
+    padding: 2px;
+    background: none;
+    color: #636363;
+    font-size: 18px;
+    height: 31px;
+    width: 32px;
+    border-radius: 5px;
+    margin-left: 9px;
+    line-height: 29px;
+}
+.videosec a{
+	display:block;
+}
+.videosec a {
+    width: 100%;
+    position: relative;
+}
+.imgvid {
+    width: 100%;
+    border-radius: 10px;
+}
+.videosec span {
+    width: 55px;
+    display: inline-block;
+    height: 55px;
+    position: absolute;
+    top:50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+
+
+.videosec h3 {
+    margin-top: 0px;
+    color: #fff;
+    text-align: center;
+    margin: 10px 0px 0px;
+    font-size: 19px;
+}
+.article-img{
+	position:relative;
+}
+
+.article-img img {
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+}
+.img2 img{
+	border-radius:15px !important;
+}
+.article-date {
+    position: relative;
+    padding: 15px 15px 0px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #131313;
+}
+.article-date h4 {
+    padding-right: 109px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 400;
+    width: 100%;
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+}
+.article-date h4 img{
+	padding-right:10px;
+}
+.imgoverlay {
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%,rgba(0,0,0,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(0,0,0,1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#000000',GradientType=0 );
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+	opacity:0.7
+}
+.article-date span {
+    position: relative;
+    font-size: 13px;
+    width: 152px;
+    text-align: right;
+}
+.article-date img {
+    width: auto !important;
+    margin-right: 8px;
+}
+.articleinf {
+    width: 100%;
+    float: left;
+}
+.articleinf li:last-of-type {
+  margin-right: 0;
+}
+.authorarticle {
+    display: flex;
+    margin:0px 0px 0px;
+    width: 100%;
+    float: left;
+    color:#fff;
+    font-size: 18px;
+    align-items: center;
+}
+.articleinf img {
+    width: 18px !important;
+    margin-right: 0px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+.articleinf li {
+    margin-right: 16px;
+    font-size: 13px;
+    letter-spacing: 0px;
+    color: #fff;
+    float: left;
+    position: relative;
+    padding-left: 23px;
+    line-height: 24px;
+}
+.articleinf li a {
+    color: #fff;
+    display: block;
+    line-height: 24px;
+}
+.artic-infoma {
+    padding: 20px;
+    background: #131313;
+    border-radius: 0px 0px 15px 15px;
+    float: left;
+    width: 100%;
+}
+.artic-infoma h2 {
+    color: #fff;
+    font-size: 17px;
+    margin-top: 0px;
+    margin-bottom: 7px;
+}
+.artic-infoma h4 {
+    color: #fff;
+    font-size: 15px;
+    margin-top: 0px;
+    margin-bottom: 7px;
+}
+.owl-carousel-news .owl-nav{
+	position: absolute;
+right: 0;
+top: -51px;
+}
+.owl-carousel-article .owl-nav button {
+    border: 1px solid #636363;
+    padding: 2px;
+    background: none;
+    color: #636363;
+    font-size: 18px;
+    height: 31px;
+    width: 32px;
+    border-radius: 5px;
+    margin-left: 9px;
+    line-height: 29px;
+}
+.owl-carousel-article .owl-nav button:hover, .owl-carousel-news .owl-nav button:hover{
+	background:#e8c38f;
+	background:1px solid #e8c38f;
+}
+.owl-carousel-article .owl-nav{
+	position: absolute;
+right: 0;
+top: -51px;
+}
+.learn h4{
+	color:#d2ae70;
+}
+.learn {
+    color: #fff;
+    position: relative;
+    padding-left: 80px;
+}
+.learn h5 {
+    font-size: 21px;
+    color: #d2ae70;
+    margin-bottom: 10px;
+}
+.learn p {
+    font-size: 17px;
+    color: #fff;
+    margin-bottom: 60px;
+}
+.learn img {
+    position: absolute;
+    left: 0;
+    top: 0px;
+}
+.walletinfo h3 {
+    color: #e8c38f;
+    font-size: 25px;
+    margin-bottom: 26px;
+    padding-bottom: 14px;
+}
+.walletinfo p {
+    color: #fff;
+}
+.stripright, .stripletf{
+	position:relative;
+}
+.stripright::after{
+	position:absolute;
+	width:125px;
+	height:5px;
+	content:"";
+	right:0;
+	bottom:0;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#050505+0,e8c38f+100 */
+background: #050505; /* Old browsers */
+background: -moz-linear-gradient(left,  #050505 0%, #e8c38f 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #050505 0%,#e8c38f 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #050505 0%,#e8c38f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#050505', endColorstr='#e8c38f',GradientType=1 ); /* IE6-9 */
+
+
+}
+.stripletf::after{
+	position:absolute;
+	width:125px;
+	height:5px;
+	content:"";
+	left:0;
+	bottom:0;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e8c38f+0,050505+100 */
+background: #e8c38f; /* Old browsers */
+background: -moz-linear-gradient(left,  #e8c38f 0%, #050505 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #e8c38f 0%,#050505 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #e8c38f 0%,#050505 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8c38f', endColorstr='#050505',GradientType=1 ); /* IE6-9 */
+
+
+
+}
+.footer-social {
+    float: left;
+    color: #fff;
+    margin: 30px 0px 0px;
+    width: 100%;
+    border-top: 1px solid #231d16;
+    padding-top: 25px;
+}
+.footer-social li {
+    float: left;
+    color: #fff;
+}
+.footer-social a {
+    color: #d2b18b;
+    display: block;
+    font-size: 25px;
+    padding: 0px 0px;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #231f20;
+    margin-right: 14px;
+    text-align: center;
+    line-height: 30px;
+    background: #231f20;
+    border-radius: 50%;
+}
+.footer-social a i {
+    font-size: 18px;
+    display: inline-block;
+    line-height: 23px;
+	color:#dfbc91;
+}
+footer {
+    background: #010101;
+    padding: 35px 0px;
+}
+.colorgold{
+	color:#e5c08b;
+}
+.askque{
+	font-size:30px;
+}
+.footerform input{
+	background:none;
+	border:1px solid #e8c38f;
+	height:44px;
+}
+.footerform textarea{
+	background:none;
+	border:1px solid #e8c38f;
+	height:150px;
+}
+.footerform input:focus{
+	background:none;
+	border:1px solid #e8c38f;
+}
+.footerform textarea:focus{
+	background:none;
+	border:1px solid #e8c38f;
+}
+.submitbtn {
+   	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cea969+0,e7c78c+100 */
+background: #cea969; /* Old browsers */
+background: -moz-linear-gradient(top,  #cea969 0%, #e7c78c 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #cea969 0%,#e7c78c 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #cea969 0%,#e7c78c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cea969', endColorstr='#e7c78c',GradientType=0 ); /* IE6-9 */
+    color: #000;
+    border: 0px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-size: 17px;
+}
+.prefooter {
+    background: #161314;
+    padding: 15px 25px;
+    text-align: center;
+    color: #fff;
+}
+.colre {
+    color: #000;
+    padding: 8px 24px;
+    display: inline-block;
+    border-radius: 28px;
+    margin-bottom: 10px;
+}
+.addressfooter p {
+    display: inline-block;
+}
+.footerform label {
+    font-weight: 700;
+    color: #e5c08b;
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+.footercop {
+    font-size: 16px;
+}
+.innerheader.bgtriangle {
+    width: 100%;
+    padding: 15px 0px;
+}
+.page_breadcrumbs {
+    position: relative;
+    padding: 75px 0px;
+	clip-path: polygon(0% 0%, 0% 75%, 50% 100%, 100% 75%, 100% 0%);
+	margin-bottom:65px;
+}
+.page_breadcrumbs .container{
+	position:relative;
+	z-index:5;
+}
+/*
+.page_breadcrumbs::before {
+    content: '';
+    position: absolute;
+    background: url(../images/breadcrumbs.jpg) no-repeat center / cover;
+    clip-path: polygon(0% 0%, 0% 75%, 50% 100%, 100% 75%, 100% 0%);
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}*/
+
+.bc-about{
+    background: url(../images/bc-about-us.jpg) no-repeat center / cover;
+}
+.bc-commnuity{
+    background: url(../images/bg-community.jpg) no-repeat center / cover;
+}
+.bc-education{
+    background: url(../images/bg-education.jpg) no-repeat center / cover;
+}
+.bc-contact{
+    background: url(../images/bg-contact.jpg) no-repeat center / cover;
+}
+.breadcrumbs-title {
+    color: #fff;
+    font-weight: 600;
+    font-size: 37px;
+    margin-bottom: 15px;
+}
+.breadmain li {
+    display: inline-block;
+    margin: 0px 22px;
+	position:relative;
+}
+.breadmain li:last-child{
+	margin-right:0px;
+}
+.breadmain li::after {
+    position: absolute;
+    content: "";
+    top: 7px;
+    right: -26px;
+    background: #e8c38f;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+}
+.breadmain li:last-child:after{
+	display:none !important;
+}
+.breadmain li{
+    color:#fff;
+}
+
+.breadmain li a{
+	color:#fff;
+}
+.contactsec h4 {
+    color: #fff;
+    margin-bottom: 10px;
+	font-size:25px;
+}
+.contactsec p {
+    color: #fff;
+    margin-bottom: 5px;
+}
+.contactsec img{
+    width:50px;
+	margin-bottom:25px;
+}
+.formcontatus input{
+	height:50px;
+	font-weight:600;
+	border:0px;
+}
+.formcontatus textarea{
+	font-weight:600;
+	font-size:15px;
+	border:0px;
+}
+.contactsec{
+	padding:25px 0px;
+}
+.formcontatus input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #666;
+  opacity: 1; /* Firefox */
+}
+
+.formcontatus input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #666;
+}
+
+.formcontatus input::-ms-input-placeholder { /* Microsoft Edge */
+ color: #666;
+}
+.submitbtn2 {
+   	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cea969+0,e7c78c+100 */
+background: #cea969; /* Old browsers */
+background: -moz-linear-gradient(top,  #cea969 0%, #e7c78c 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #cea969 0%,#e7c78c 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #cea969 0%,#e7c78c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cea969', endColorstr='#e7c78c',GradientType=0 ); /* IE6-9 */
+    color: #000;
+    border: 0px;
+    padding:10px 25px 7px;
+    border-radius: 5px;
+    font-size: 17px;
+	font-weight:600;
+}
+#map {
+    margin: 0 auto;
+    width: 100%;
+    height: 400px;
+}
+.divartcipos {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    z-index: 5;
+}
+.divartcipos .article-date{
+	background:none !important;
+}
+.divartcipos .artic-infoma{
+	background:none !important;
+}
+.artic-infoma2 {
+    padding:10px 20px 20px;
+    border-radius: 0px 0px 15px 15px;
+    float: left;
+    width: 100%;
+}
+.artic-infoma2 h2 {
+    color: #fff;
+    font-size: 19px;
+    margin-top: 0px;
+    margin-bottom: 7px;
+}
+.artic-infoma2 h4 {
+    color: #fff;
+    font-size:17px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+	font-weight:400;
+}
+
+
+.owl-carousel-popular .owl-nav, .owl-carousel-rpost .owl-nav{
+	position: absolute;
+right: 0;
+top: -51px;
+}
+.owl-carousel-popular .owl-nav button, .owl-carousel-rpost .owl-nav button{
+    border: 1px solid #636363;
+    padding: 2px;
+    background: none;
+    color: #636363;
+    font-size: 18px;
+    height: 31px;
+    width: 32px;
+    border-radius: 5px;
+    margin-left: 9px;
+    line-height: 29px;
+}
+.owl-carousel-popular .owl-nav button:hover, .owl-carousel-popular .owl-nav button:hover{
+	background:#e8c38f;
+	background:1px solid #e8c38f;
+}
+.owl-carousel-rpost .owl-nav button:hover, .owl-carousel-rpost .owl-nav button:hover{
+	background:#e8c38f;
+	background:1px solid #e8c38f;
+}
+
+
+.owl-carousel-popular .owl-nav{
+	position: absolute;
+right: 0;
+top: -51px;
+}
+.posrela{
+	position:relative;
+}
+.ulpagination{
+	float:right;
+}
+.ulpagination li {
+    float: left;
+    margin: 0px 5px;
+}
+.ulpagination li a {
+    display: block;
+    padding: 4px 0px;
+    border-radius: 5px;
+    color: #fff;
+    width: 33px;
+    text-align: center;
+    line-height: 25px;
+    height: 32px;
+}
+.ulpagination li:first-child a{
+    border: 1px solid #fff;
+}
+.ulpagination li:last-child a{
+    border: 1px solid #fff;
+}
+.vidoeinfo {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 5;
+    padding: 20px;
+    width: 100%;
+}
+.vidoeinfo h4{
+color:#fff;
+}
+.vidoeinfo h5 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 16px;
+    margin-top: 8px;
+}
+.article-datein {
+    position: relative;
+    display: block;
+    float: left;
+    width: 100%;
+}
+.article-datein h4 {
+    padding-right: 109px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: 400;
+    width: 100%;
+    padding-left: 0px;
+    display: flex;
+    align-items: center;
+}
+.article-datein h4 img{
+	padding-right:10px;
+}
+.cviewhead h2 {
+    color: #dfb170;
+    margin-bottom: 8px;
+    font-size: 34px;
+    font-weight: 300;
+    line-height: 43px;
+}
+.cviewhead h4 {
+    color: #fff;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+.comunityinfo p{
+	 color: #fff;
+}
+.comunityinfo h4{
+	 color: #e5c08b;
+}
+.fullpag{
+	width:100%;
+	height:100%;
+}
+html{
+	height:100%;
+}
+/* login */
+
+.formlogin input {
+    border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+    border-bottom: 1px solid #e8c38f;
+    background: none;
+    font-size: 16px;
+    height: 45px;
+    padding: 0px;
+    width: 100%;
+	color:#fff;
+}
+.formlogin input:focus {
+    border-bottom: 1px solid #fff;
+    outline: none;
+}
+
+.formlogin button{
+	width:100%;
+	border:0px;
+	height:45px;
+	border-radius:25px;
+}
+.mt-3.fontwhite.font-size {
+    font-size: 24px;
+}
+.needacc a{
+	color:#e8c38f;
+}
+.loginbg {
+    background: url(../images/login-bg.jpg) no-repeat #000;
+    background-size: cover;
+}
+
+
+
+.table-container {
+  display: block;
+  margin: 2em auto;
+  width:100%;
+  max-width: 100%;
+  border:1px solid rgba(255,255,255,0.2);
+}
+
+.flag-icon {
+  margin-right: 0.1em;
+}
+
+.flex-table {
+  display: flex;
+  flex-flow: row wrap;
+  transition: 0.5s;
+}
+.flex-table:first-of-type {
+
+}
+.flex-table:first-of-type .flex-row {
+  	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#cea969+0,e7c78c+100 */
+background: #cea969; /* Old browsers */
+background: -moz-linear-gradient(top,  #cea969 0%, #e7c78c 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #cea969 0%,#e7c78c 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #cea969 0%,#e7c78c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cea969', endColorstr='#e7c78c',GradientType=0 ); /* IE6-9 */
+  color: #000;
+}
+.flex-table.row:nth-child(odd) .flex-row {
+  background: #f4f2f1;
+}
+.flex-table:hover {
+  transition: 500ms;
+}
+
+.flex-row {
+
+  padding: 0.5em 0.5em;
+  border-bottom:1px solid rgba(255,255,255,0.2);
+  color:#fff;
+   justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.rowspan {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.column {
+  display: flex;
+  flex-flow: column wrap;
+  width: 75%;
+  padding: 0;
+}
+.column .flex-row {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  border-bottom: solid 1px #d9d9d9;
+}
+.column .flex-row:hover {
+  background: #F5F5F5;
+  transition: 500ms;
+}
+
+.flex-cell {
+  width: calc(100% / 5);
+  text-align: center;
+  padding: 0.5em 0.5em;
+  border-right: solid 1px #d9d9d9;
+}
+@media all and (max-width: 999px) {
+  .flex-row {
+    width: calc(100% / 4);
+  }
+  .flex-row.first {
+    width: 100%;
+  }
+
+  .column {
+    width: 100%;
+  }
+  .flex-row.w1 {
+    display: none !important;
+}
+.w3, .w4, .w5, .w6 {
+    width: 25% !important;
+    border-right: 1px solid #333;
+}
+.flex-row.first {
+    width: 100%;
+    text-align: center;
+}
+}
+@media all and (max-width: 315px) {
+  .flex-table .flex-row {
+    border-bottom: 0;
+  }
+  .flex-table .flex-row:last-of-type {
+    border-bottom: solid 1px #d9d9d9;
+  }
+
+  .header .flex-row {
+    border-bottom: solid 1px;
+  }
+
+  .flex-row {
+    width: 100%;
+  }
+  .flex-row.first {
+    width: 100%;
+    border-bottom: solid 1px #d9d9d9;
+  }
+
+  .column {
+    width: 100%;
+  }
+  .column .flex-row {
+    border-bottom: solid 1px #d9d9d9;
+  }
+
+  .flex-cell {
+    width: 100%;
+  }
+}
+.table-container button {
+    margin-right: 10px;
+    border: 0px;
+    padding:5px 25px;
+    border-radius: 5px;
+	border:1px solid transparent;
+}
+.table-container button:hover{
+	background:#000;
+	color:#dfb264;
+	border:1px solid #dfb264;
+}
+.w1 {
+    width:7%;
+	  
+  text-align: center;
+}
+.w2 {
+    width:33%;
+	  
+  text-align: left;
+}
+.w3 {
+    width: 15%;
+	 text-align: center;
+}
+.w4 {
+    width: 15%;
+	 text-align: center;
+}
+.w5 {
+    width:15%;
+	 text-align: center;
+}
+.w6 {
+    width: 15%;
+	 text-align: center;
+}
+.table-container img {
+    margin-right: 10px;
+    width: 50px;
+	 text-align: letf;
+}
+.editposdis {
+    text-align: right;
+}
+
+.articleinfgold {
+    width: 100%;
+    float: left;
+}
+.articleinfgold li {
+    margin-right: 16px;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color:#dfb170;
+    float: left;
+    position: relative;
+    padding-left: 23px;
+}
+.articleinfgold img {
+    width: 18px !important;
+    margin-right: 0px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+.articleinfgold li a {
+    color: #dfb170;
+    display: block;
+    line-height: 24px;
+}
+
+.reviewlis {
+    width: 100%;
+    display: block;
+    margin-bottom: 55px;
+}
+.rephoto {
+    display: table-cell;
+    vertical-align: top;
+}
+.recontent {
+    display: table-cell;
+    padding-left: 35px;
+}
+.recontent h4 {
+    color: #dfb170;
+    font-weight: 300;
+}
+.rephoto img {
+    width: 150px;
+    border-radius: 50%;
+	
+}
+.recontent span {
+    color: #dfb170;
+    display: block;
+    margin-bottom: 10px;
+	font-weight: 300;
+}
+.recontent p {
+    color: #d4d4d4;
+    font-size: 17px;
+    line-height: 25px;
+}
+.commeti h3{
+	color:#dfb170;
+}
+.commecri {
+    float: right;
+    padding: 6px 18px;
+    background: #dfb170;
+    color: #000;
+    border-radius: 5px;
+}
+.reviewform textarea {
+    background: none;
+    border: 1px solid rgba(212,212,212,0.2);
+    height: 150px;
+    width: 100%;
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+.authorarticle2 {
+    display: flex;
+    margin: 10px 0px 0px;
+    width: 100%;
+    float: left;
+    color:#dfb170;
+    font-size: 18px;
+    align-items: center;
+}
