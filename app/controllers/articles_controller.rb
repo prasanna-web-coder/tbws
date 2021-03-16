@@ -1,11 +1,15 @@
 class ArticlesController < ApplicationController
   protect_from_forgery prepend: true
-  before_action :set_article, only: [:show, :update, :delete]
+  before_action :set_article, only: [:show, :update, :destroy]
 
   def create
     @article = Article.new(article_params)
     if @article.save
-      render json: {status: 200, message: "Article successfully saved!"}
+      render json: {
+        status: 200,
+        message: "Article successfully saved!",
+        article: ArticleSerializer.new(@article)
+      }
     else
       render json: {status: 422, message: humanize_error_msg(@article.errors)}
     end
@@ -13,7 +17,11 @@ class ArticlesController < ApplicationController
 
   def update
     if @article.update(article_params)
-      render json: {status: 200, message: "Article successfully updated!"}
+      render json: {
+        status: 200,
+        message: "Article successfully updated!",
+        article: ArticleSerializer.new(@article)
+      }
     else
       render json: {status: 422, message: humanize_error_msg(@article.errors)}
     end

@@ -1,6 +1,6 @@
 class ArticleSerializer < ActiveModel::Serializer
 
-  attributes :title, :image_url, :content, :created_at
+  attributes :title, :image_url, :content, :created_at, :article_id
 
   def title
     object.a_title
@@ -12,6 +12,10 @@ class ArticleSerializer < ActiveModel::Serializer
 
   def content
     object.a_content
+  end
+
+  def article_id
+    object.id
   end
 
 end
