@@ -59,3 +59,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 gem 'sassc', '~> 2.1.0'
 gem 'unicorn'
+
+gem 'pry', '~> 0.13.1'
+
+gem 'active_model_serializers'

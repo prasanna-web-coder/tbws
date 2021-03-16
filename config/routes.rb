@@ -4,4 +4,8 @@ Rails.application.routes.draw do
   end
 
   get '/' => 'home#index'
+
+  resources :articles do
+    
+  end
 end

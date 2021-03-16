@@ -50,6 +50,6 @@ test:
 #
 production:
   <<: *default
-  database: tbws_production
-  username: tbws
+  database: tbws
+  username: tbws_dbuser
   password: <%= ENV['TBWS_DATABASE_PASSWORD'] %>
