@@ -44,3 +44,4 @@ config/database.yml
 # Ignore mac internal config
 *.DS_Store
 tags
+config/database.yml
